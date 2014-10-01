@@ -1,0 +1,77 @@
+## IMPORTANTE!!!
+## Fare sempre molta attenzione a spazi finali, che non si vedono ma fanno 
+## parte dei valori, e nelle righe "logiche" creano altri strani problemi
+
+## query per i soggetti conservatori
+
+query.inventariali = \
+SELECT [ID_DatoInventariale] \
+      ,[Tipologia] \
+      ,[Titolo] \
+      ,[Descrizione] \
+      ,[Numero] \
+      ,[DescrizioneTestuale] \
+      ,[DataInizio] \
+      ,[DataFine] \
+      ,[DescrizioneEstremi] \
+      ,[Classificazione] \
+      ,[Note] \
+      ,[NoteDirezione] \
+      ,[ID_Elemento] \
+      ,[ID_Inventario] \
+      ,[CoseNotevoli] \
+      ,[Ordinamento] \
+      ,[Acquisizione] \
+      ,[CriteriOrdinamento] \
+      ,[Accesso] \
+      ,[Riproduzione] \
+      ,[Lingua] \
+      ,[Conservazione] \
+      ,[NoteGestionali] \
+      ,[Id_ElemComplDoc] \
+      ,[FlgUnitaCond] \
+  FROM [Archivista_NAPOLI].[dbo].[DatiInventariali] order by id_datoInventariale
+  
+query.inventariali.completa = \
+SELECT [ID_DatoInventariale] \
+      ,[Tipologia] \
+      ,[Titolo] \
+      ,[Descrizione] \
+      ,[Numero] \
+      ,[DescrizioneTestuale] \
+      ,[DataInizio] \
+      ,[DataFine] \
+      ,[DescrizioneEstremi] \
+      ,[Classificazione] \
+      ,[Note] \
+      ,[NoteDirezione] \
+      ,[ID_Elemento] \
+      ,[ID_Inventario] \
+      ,[Code] \
+      ,[CoseNotevoli] \
+      ,[Ordinamento] \
+      ,[Acquisizione] \
+      ,[CriteriOrdinamento] \
+      ,[Accesso] \
+      ,[Riproduzione] \
+      ,[Lingua] \
+      ,[Conservazione] \
+      ,[NoteGestionali] \
+      ,[Id_ElemComplDoc] \
+      ,[FlgUnitaCond] \
+      ,[ID_Orig] \
+      ,[DataImport] \
+      ,[FlgTopogr] \
+  FROM [Archivista_NAPOLI].[dbo].[DatiInventariali] order by id_datoInventariale
+  
+## file e directory di output
+
+xml.output.filename = DatiInventariali.xml
+xml.output.directory = tmp
+xml.output.separator = _
+xml.output.maxrecords = 100
+
+## file di log
+log.file = log
+log.level = info
+log.layout = %05r %p %C{1}.%M - %m%n
