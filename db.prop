@@ -5,5 +5,4 @@ database.driver = com.microsoft.sqlserver.jdbc.SQLServerDriver
 database.name = Archivista_NAPOLI
 database.username = sa
 database.password =
-//database.instancename = SQLEXPRESS
-
+##database.instancename = SQLEXPRESS

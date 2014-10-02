@@ -64,8 +64,8 @@ public class Test {
 					}
 					else
 					{
-						val = val.replaceAll("Vicer.. ", "Vicerè ");
-						val = val.replaceAll("Universit. ", "Università ");
+//						val = val.replaceAll("Vicer.. ", "VicerÃ¨ ");
+//						val = val.replaceAll("Universit. ", "UniversitÃ  ");
 						field += "0\">";
 						field += val.trim();
 						field += "</field>";
@@ -75,6 +75,7 @@ public class Test {
 				pw.println("</record>");
 			}
 			pw.println("</table>");
+			pw.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
