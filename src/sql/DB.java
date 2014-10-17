@@ -24,7 +24,7 @@ public class DB
 		System.err.println(str);
 	}
 
-	
+	//commento
 	public DB()
 	{
 		try
