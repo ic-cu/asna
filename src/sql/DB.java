@@ -24,6 +24,7 @@ public class DB
 		System.err.println(str);
 	}
 
+	
 	public DB()
 	{
 		try
